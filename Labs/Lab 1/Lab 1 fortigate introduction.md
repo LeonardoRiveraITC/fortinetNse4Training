@@ -15,11 +15,11 @@ get system status
 
 Para cada comando podemos usar ? como help
 
-11. show system interface port3 - Mostrar la [[configuración]] del puerto 3
+11. show system interface port3 - Mostrar la [[Configuración]] del puerto 3
 	![[Pasted image 20240616141348.png]]
 
 
-12. show full-configuration system interface port3 - Mostrar [[configuración]] del puerto 3
+12. show full-configuration system interface port3 - Mostrar [[Configuración]] del puerto 3
 	![[Pasted image 20240616141430.png]]
 
 

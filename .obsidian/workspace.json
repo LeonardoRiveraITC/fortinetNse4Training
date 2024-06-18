@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ace4f496acf53258",
+        "id": "20fde91d140de067",
         "type": "tabs",
         "children": [
           {
-            "id": "9662b933216e235a",
+            "id": "eaa1ba4dea501896",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "configuración.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4498155408ff2714",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Labs/Lab 2 Generando backups de configuración.md",
+                "file": "Configuración.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "backup",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "configuración.md",
+                "file": "Configuración.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "configuración.md",
+                "file": "Configuración.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "configuración.md"
+                "file": "Configuración.md"
               }
             }
           }
@@ -159,52 +147,53 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9662b933216e235a",
+  "active": "853daa2b7f7c11da",
   "lastOpenFiles": [
-    "Labs/Lab 2 Generando backups de configuración.md",
-    "configuración.md",
-    "res/Pasted image 20240616152446.png",
+    "Administración.md",
+    "Configuración.md",
+    "DNS.md",
+    "DHCP.md",
+    "Antivirus/Troubleshooting.md",
+    "Redes.md",
+    "Pasted image 20240618145619.png",
+    "Vdom.md",
+    "Contexto de seguridad actual.md",
+    "Factory defaults.md",
+    "Exploit.md",
+    "Servicios.md",
+    "VLANS.md",
+    "res/Pasted image 20240618133742.png",
+    "Labs/Lab 2 - Firewall/Lab 3.md",
+    "res/Pasted image 20240618132956.png",
+    "res/Pasted image 20240618133731.png",
+    "res/Pasted image 20240618133644.png",
+    "res/Pasted image 20240618133651.png",
+    "res/Pasted image 20240618131255.png",
+    "res/Pasted image 20240618132457.png",
+    "PPPoE.md",
+    "res/Pasted image 20240618112802.png",
+    "res/Pasted image 20240618110948.png",
+    "Administración",
+    "Troubleshooting - All.md",
+    "Labs/Lab 2 - Firewall/Lab 2- Reordenando politicas de firewall y acciones.md",
+    "Politicas de Firewall (Pendiente).md",
+    "Labs/Lab 2 - Firewall/Lab 1. Creando objetos y politicas.md",
+    "objetos.md",
+    "Labs/Lab 2 - Firewall",
+    "Labs/Lab 1/Lab 1 fortigate introduction.md",
+    "Labs/Lab 1/Lab 3 - Configuración de cuentas de administración.md",
+    "Labs/Lab 1",
+    "Labs/Lab 1/Lab 2 Generando backups de configuración.md",
     "CLI.md",
-    "res/Pasted image 20240616152002.png",
-    "res/Pasted image 20240616151914.png",
-    "Labs/Lab 1 fortigate introduction.md",
-    "res/Pasted image 20240616141430.png",
-    "res/Pasted image 20240616141348.png",
-    "res/Pasted image 20240616134905.png",
     "Labs",
     "Security Fabric/downstream.md",
     "Security Fabric/raiz.md",
     "Security Fabric/Security fabric.md",
-    "res/Pasted image 20240614175520.png",
-    "res/Pasted image 20240614175144.png",
-    "res/Pasted image 20240614174538.png",
-    "res/Pasted image 20240614173704.png",
-    "Security Fabric/stitches.md",
-    "Troubleshooting - All.md",
     "Security Fabric",
-    "Intrution Prevention System IPS/Troubleshooting.md",
-    "Intrution Prevention System IPS/IPS - Intrution Prevention System.md",
-    "Antivirus/Best practices - AV.md",
-    "Intrution Prevention System IPS/Best practices - IPS.md",
-    "SSL/SSL inspection.md",
-    "Antivirus/Antivirus.md",
-    "Intrution Prevention System IPS/Denial of service.md",
-    "Excalidraw/Drawing 2024-06-13 13.14.53.excalidraw.md",
     "Excalidraw",
-    "Intrution Prevention System IPS/Protocol Decoder (Flow-based).md",
-    "Logs/Logs.md",
-    "Botnets (pendiente).md",
-    "Politicas de Firewall (Pendiente).md",
-    "Firmas (Pendiente).md",
-    "Antivirus/Troubleshooting.md",
     "Intrution Prevention System IPS/res",
-    "Exploit.md",
-    "Anomalia.md",
     "Intrution Prevention System IPS",
     "Troubleshooting",
-    "Logs",
-    "SSL",
-    "res",
-    "Protocol options"
+    "Logs"
   ]
 }
