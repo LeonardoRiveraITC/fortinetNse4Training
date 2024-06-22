@@ -1,4 +1,4 @@
-### Backups
+## Backups
 Aplicado en la práctica [[Lab 1 fortigate introduction]]
 En fortigate la configuración se guarda como una archivo de texto plano para su fácil administración y recuperación
 
@@ -12,6 +12,24 @@ Para acceder al menu de configuración vamos al menu de usuario
 menu > configuration > Backup | restore | revisions | scripts
 
 - ###### Las configuraciónes se pueden almacenar por [[Vdom]]
+
+#### Información del backup
+[[Lab 2 Generando backups de configuración]]
+El header de un archivo de backup siempre tendrá información sobre. ==El modelo, el firmware y el build== de los que se generó esa configuración. Esto ayuda a fortigate a saber lo que requiere para aplicar la configuración. En el caso de archivos cifrados, además de la contraseña se requiere del mismo modelo y build de fortigate.
+
+#### Opcionalmente podemos usar YAML
+Esto se puede hacer solo por CLI
+
+```
+execute backup yaml-config {ftp|tftp} <filename> server <username> 
+<password>
+```
+
+```
+execute restore yaml-config {ftp|tftp} <filename> server <username> 
+<password>
+```
+
 ##### Tips
 
 - `ris:Checkbox` Siempre hay que respaldar, aunque se trate de un cambio menor, ya que no hay forma de deshacer configuraciones. 
@@ -39,4 +57,17 @@ Para integrar a la red, fortigate debe conocer el default gateway. Este se conoc
 ### *Hay que asegurarse de que exista una ruta que coincida a todas las ips (0.0.0.0/0) y las envie a internet, o al siguiente router *
 ![[Pasted image 20240618145619.png]]
 
+
+## Actualizaciones
+
+#### Firmware
+
+A partir de la versión 7, esto se maneja desde [[Security fabric]]. Alternativamente podemos ver la version con 
+```
+get system status
+```
+
+Para actualizar debemos seleccionar el dispositivo > upgrade en security fabirc. Y elegir el archivo o imagenes directamente de fortiguard
+
+Debemos asegurarnos de seguir un ==upgrade path== para asegurarnos de que no haya breaking changes
 

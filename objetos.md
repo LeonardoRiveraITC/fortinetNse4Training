@@ -6,3 +6,56 @@ Los objetos, además de su valor contienen un campo nombre y descripción. De es
 
 Los objetos se aplican a una politica de firewall una vez creados
 
+==Un objeto no se puede eliminar sin antes eliminar todas las referencias que se hacen a ellos. Esto se facilita con la columna referencias en la vista del objeto en cuestión==
+### Direcciones y rangos de direcciones
+Las direcciones son un objeto que refleja direcciones ip. Estos pueden ser rangos o subredes. Para agregar una ip unica, debemos agregar una subred, ingresar la ip deseada y poner la mascara de red como puros 1s (/32). En este grupo de objetos también entran los ==FQDN, las IPs geográficas, las IPs dinamicas y direcciones de capa 2 (MAC) y los grupos de direcciones==
+
+### Servicios
+Un [[Servicio de red (pendiente)]] tiene la caracteristica de estar definido por el par ==Protocolo de transmision/Puerto Destino== (En los casos de aplicaciones legacy, seguramente puerto source tambien, ya que este se elige de forma aleatoria en el esquema actual de las redes). Por ejemplo [[HTTP (pendiente)]] es TCP/80, mientras que [[HTTPS]] es TCP/443. Sin embargo esto no esta escrito en piedra, y de ser necesario podemos crear nuevos objetos de servicio para acomodar a las reglas de firewall. Por ejemplo. HTTP-PORTAL-ORG: TCP/8080
+### Schedules
+Las schedules son horarios aplicables a politicas de firewall durante los cuales entrara en vigor la politica en cuestion
+
+Se puede programar por recurrentes o una vez; horas en dias especificos
+
+- Recurrente. Aplica en los dias indicados en las horas indicadas. Si la hora de termino es más temprano que la hora de inicio, se terminara a la hora de fin del siguiente dia. Ejemplo: Permitir redes sociales en horas de comida
+ 
+ - Una vez: Politicas que se aplicaran solo una vez Con fecha y hora de inicio y fecha y hora de fin. En este caso la fecha fin obviamente no puede ser antes de la inicio. Ideal para eventos especiales: por ejemplo: dia del niño en la planta. ==Este ocaciona que se genere un log  por dia de 1 a n dias (maximo 100) en preexpiration event log==
+
+### Perfiles de seguridad
+Los perfiles de seguridad son parte de los [[Servicios]] que ofrece fortigate para la protección extendida de la red. Una vez que la politica acepto el paquete, puede pasar por varios perfiles de seguridad, los cuales analizaran paquete por paquete en dos modos
+- [[Proxy-mode]] ó
+- [[Flow mode]]
+Cada uno con sus caracteristicas
+Entre los perfiles que podemos aplicar tenemos
+- [[Antivirus]]
+- [[Web filter (pendiente)]]
+- [[Video filter (pendiente)]]
+- [[DNS filter (pendiente)]]
+- [[Application control (pendiente)]]
+- [[IPS - Intrution Prevention System]]
+- [[File filter (pendiente)]]
+- [[VoIP (pendiente)]]
+- [[Web Application Firewall WAF (pendiente)]]
+- [[SSL inspection]]
+
+Estos cada uno con cuenta con su proposito y deben ser usados con caucion ya que consumen recursos de cpu.
+
+*Por default VoIp, WAF y Video filter deben de activarse en [[Visibilidad]]*
+
+### Internet Service Database
+Es una base de datos, parte de los [[Servicios]] de fortiguard  que contiene  multiples servicios de internet. ==Sus Ips, puertos, servicios más usados==. Y es por ello que es mutuamente exclusivo con direcciones y servicios, ya que un objeto ISDB ya contiene esta información hardcodeada 
+Esta base de datos se mantiene en constante actualizacion desde fortiguard
+
+También podemos crear ISDB custom
+
+#### Objetos geograficos de servicios de internet
+Estos son rangos de ip de algun servicio de internet que se encuentran en un pais
+
+##### ISDB Usado en [[Lab 3]]
+
+### [[Traffic Shaping]]
+En fortigate podemos aplicar traffic shaping de 3 maneras:
+- Por grupos 
+- Por IPs
+- Por aplicación
+Una politica de traffic shaping se aplica a una politica de firewall, por lo que hay que asegurarse que ambas coincidan

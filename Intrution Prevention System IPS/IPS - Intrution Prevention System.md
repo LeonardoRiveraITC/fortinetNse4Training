@@ -1,3 +1,4 @@
+Parte del [[UTM]]
 ## Uso 
 Para aplicar un perfil IPS debemos configurarlo primero en 
 ==Security profiles > Intrusion prevention system ==
@@ -29,7 +30,7 @@ Para encontrar exploits el IPS usa [[Firmas (Pendiente)]]
 - Se actualiza la base de datos de firmas para reconocer exploits
 - Por su parte un protocolo no se actualiza a menos que cambie la especificación (MUY rara vez)
 - El motor se actualiza con más frecuencia pero no es tan seguido
-- Por su parte, la base de datos de ip botnets es parte de ISDB, y la base de datos de dominios botnets es parte de AV
+- Por su parte, la base de datos de ip botnets es parte de [[ISDB]], y la base de datos de dominios botnets es parte de AV
 - La frecuencia de las actualizaciones a partir de 7.0 se calcula en base a las licencias validas y el modelo con un intervalo de una hora
 - Como todo producto, si caduca la licencia se podrá usar pero dejará de ser actualizado
 
@@ -60,7 +61,7 @@ Durante este periodo de tiempo, no se logeara tráfico del host*
 
 
 # Forma de detección
-Los sensores son la manera en la que se elige que firmas detectar, estas firmas de forma similar a las [[Politicas de Firewall (Pendiente)]], se análizan  de arriba a abajo, y mientras menos y más arriba esten las frecuentes menos tiempo de computo llevara el sensor
+Los sensores son la manera en la que se elige que firmas detectar, estas firmas de forma similar a las [[Politicas de Firewall]], se análizan  de arriba a abajo, y mientras menos y más arriba esten las frecuentes menos tiempo de computo llevara el sensor
 
 
 ## Excepciones 
@@ -70,7 +71,7 @@ Bajo de cada firma podemos poner excpeciones de ip fuente o destino, esto solo s
 
 ## Acciones
 
-De nuevo, paralelo al [[Politicas de Firewall (Pendiente)]], tenemos distintas acciones a tomar cuando se encuentra con una firma
+De nuevo, paralelo al [[Politicas de Firewall]], tenemos distintas acciones a tomar cuando se encuentra con una firma
 
 Estas acciones son:
 

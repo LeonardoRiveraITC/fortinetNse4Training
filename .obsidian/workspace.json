@@ -4,16 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "20fde91d140de067",
+        "id": "48879dd82062f920",
         "type": "tabs",
         "children": [
           {
-            "id": "eaa1ba4dea501896",
+            "id": "54342f9b0406f35a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Configuración.md",
+                "file": "Politicas de Firewall.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1aa6852f903f33d6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "objetos.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "backup",
+                "query": "ISDB",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Configuración.md",
+                "file": "Politicas de Firewall.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Configuración.md",
+                "file": "Politicas de Firewall.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Configuración.md"
+                "file": "Politicas de Firewall.md"
               }
             }
           }
@@ -147,48 +159,48 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "853daa2b7f7c11da",
+  "active": "54342f9b0406f35a",
   "lastOpenFiles": [
-    "Administración.md",
+    "res/Pasted image 20240621173026.png",
+    "res/Pasted image 20240620203547.png",
+    "res/Pasted image 20240620200004.png",
+    "res/Pasted image 20240620082513.png",
+    "res/Pasted image 20240619101952.png",
+    "res/Pasted image 20240618145619.png",
+    "res/Pasted image 20240618133742.png",
+    "res/Pasted image 20240618133731.png",
+    "res/Pasted image 20240618133651.png",
+    "res/Pasted image 20240618133644.png",
+    "res/Pasted image 20240618132956.png",
+    "Politicas de Firewall.md",
+    "objetos.md",
+    "ISDB.md",
+    "Traffic Shaping.md",
+    "Security Fabric/raiz.md",
+    "Visibilidad.md",
+    "Servicios.md",
+    "Labs/Lab 2 - Firewall/Lab 3.md",
+    "Contexto de seguridad actual.md",
     "Configuración.md",
+    "Intrution Prevention System IPS/IPS - Intrution Prevention System.md",
+    "LDAP (pendiente).md",
+    "Redes.md",
+    "Labs/Lab 2 - Firewall/Lab 2- Reordenando politicas de firewall y acciones.md",
+    "Intrution Prevention System IPS/Protocol Decoder (Flow-based).md",
+    "UTM.md",
+    "Untitled.md",
+    "SSL/SSL inspection.md",
+    "Antivirus/Antivirus.md",
+    "Administración.md",
     "DNS.md",
     "DHCP.md",
     "Antivirus/Troubleshooting.md",
-    "Redes.md",
-    "Pasted image 20240618145619.png",
     "Vdom.md",
-    "Contexto de seguridad actual.md",
     "Factory defaults.md",
-    "Exploit.md",
-    "Servicios.md",
-    "VLANS.md",
-    "res/Pasted image 20240618133742.png",
-    "Labs/Lab 2 - Firewall/Lab 3.md",
-    "res/Pasted image 20240618132956.png",
-    "res/Pasted image 20240618133731.png",
-    "res/Pasted image 20240618133644.png",
-    "res/Pasted image 20240618133651.png",
-    "res/Pasted image 20240618131255.png",
-    "res/Pasted image 20240618132457.png",
-    "PPPoE.md",
-    "res/Pasted image 20240618112802.png",
-    "res/Pasted image 20240618110948.png",
     "Administración",
-    "Troubleshooting - All.md",
-    "Labs/Lab 2 - Firewall/Lab 2- Reordenando politicas de firewall y acciones.md",
-    "Politicas de Firewall (Pendiente).md",
-    "Labs/Lab 2 - Firewall/Lab 1. Creando objetos y politicas.md",
-    "objetos.md",
     "Labs/Lab 2 - Firewall",
-    "Labs/Lab 1/Lab 1 fortigate introduction.md",
-    "Labs/Lab 1/Lab 3 - Configuración de cuentas de administración.md",
     "Labs/Lab 1",
-    "Labs/Lab 1/Lab 2 Generando backups de configuración.md",
-    "CLI.md",
     "Labs",
-    "Security Fabric/downstream.md",
-    "Security Fabric/raiz.md",
-    "Security Fabric/Security fabric.md",
     "Security Fabric",
     "Excalidraw",
     "Intrution Prevention System IPS/res",

@@ -1,5 +1,5 @@
 ### ==Security Profiles > SSL inspection==
-
+Parte del [[UTM]]
 La inspección ssl permite a fortigate actuar como Man in the middle para así inspeccionar los contenidos que se encontrarían cifrados de otra manera
 Funciona de la siguiente manera:
 

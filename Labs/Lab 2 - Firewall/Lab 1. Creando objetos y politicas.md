@@ -14,7 +14,7 @@ Crearemos un objeto de tipo subnet, bajo policy objects > addresses
 Podemos ver el [[objetos]] creado
 ![[Pasted image 20240617125523.png]]
 
-Una vez que tenemos esto, podemos aplicarlo a una [[Politicas de Firewall (Pendiente)]]
+Una vez que tenemos esto, podemos aplicarlo a una [[Politicas de Firewall]]
 
 #### 3. Crear una politica de firewall
 

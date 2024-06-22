@@ -1,5 +1,6 @@
 ==Policy & Objects>Antivirus==
 
+Parte del [[UTM]]
 Para que el antivirus tome acción, como todo en fortigate, se debe primero habilitar en la politica de firewall
 ==Policy & Objects>Antivirus==
 Además de activarlo en la politica, hay que activar el ssl inspection para verdaderamente tomar provecho de esta caracteristica

@@ -1,0 +1,1 @@
+Unified Threat Managment, es el esfuerzo de fortinet de centralizar la administración de amenazas haciendo uso de modulos que conforman la gran pantalla de manejo de amenazas.

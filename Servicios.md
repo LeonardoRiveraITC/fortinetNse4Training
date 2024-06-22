@@ -23,3 +23,14 @@ Cada uno de ellos cuenta con un modelo de suscripciones, por lo que el contenido
 - globalproductapi.fortinet.net
 
 Estos usan certificados aprovados por un CA tercero, con Open Certificate Status Protocol para validar que efectivamente las actualizaciones llegan de ahí
+
+
+### Actualizaciones
+###### ISDB
+Por default esta activado, pero si se deshabilita otros servicios como AV, IPS, etc. No actualizaran el ISDB
+```
+config system fortiguard
+	set update-ffdb [enable|disable]
+next
+end
+```
