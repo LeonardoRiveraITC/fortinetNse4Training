@@ -27,6 +27,8 @@ Otros tipos de politicas se deben configurar bajo visibilidad o interfaz:
 
 Las politicas de firewall son el punto central de nuestros [[objetos]]. Es aqui donde se juntan para orquestrar la seguridad de la red. Esto nos permite dirigir acciones a tomar cuando se encuentra con la el escenario especificado por los objetos, como permitir o denegar tráfico, activar perfiles de [[UTM]] (AV, IPS, etc). Entre otras cosas como activar el nateo
 
+==Tanto en politicas como objetos, se debe tener un nombre menor a 35 carácteres, con caracteres alfanúmericos. Y caracteres especiales solo de - y __==
+
 Las politicas de firewall deben de tener un nombre para su identificación y administración fácil. Es posible deshabilitar este requisito con una feature de [[Visibilidad]] oculta. En caso de usar CLI, este requisito no aplica pero si editamos una politica sin nombre en GUI nos hara ponerla.
 
 ```
@@ -78,7 +80,7 @@ El source es de donde se origina la petición. Este puede ser un:
 [[objetos]] de tipo dirección
 
 Opcionalmente, podemos usar los datos de usuarios o grupos de usuarios como source
-- [[LDAP (pendiente)]],[[Radius (Pendiente)]],[[Active directory (pendiente)]]
+- [[LDAP]],[[Radius]],[[Active directory (pendiente)]]
 
 ==Se pueden combinar usuario y direcciones/servicios. Pero direcciones y servicios son mutuamente exluyentes==
 ###### Identificación con usuarios
@@ -93,7 +95,7 @@ El destino es igual al source, con la diferencia de que no puedes usar usuarios 
 De igual manera podemos usar cualquier [[objetos]] de tipo dirección
 
 Opcionalmente, podemos usar los datos de usuarios o grupos de usuarios como source
-- [[LDAP (pendiente)]],[[Radius (Pendiente)]],[[Active directory (pendiente)]]
+- [[LDAP]],[[Radius]],[[Active directory (pendiente)]]
 
 ==Se pueden combinar usuario y direcciones/servicios. Pero direcciones y servicios son mutuamente exluyentes==
 ##### Identificación con usuarios
@@ -139,4 +141,24 @@ end
 
 
 
+### Fine-tuning politicas
+Cuando tenemos una red muy grande, reglas muy granulares, etc. Lo más seguro es que crezca demasiado la red, por lo que la gui nos ofrece opciones de facil administración de las politicas
 
+Click derecho -> Editar en cli, filtrar por servicio, mostrar logs coincidientes, flitrar por nombre,copiar,insertar politica arriba o abajo, eliminar politica, habilitar o deshabilitar politica.
+
+
+#### Policy lookup. 
+Usado en [[Lab 4 - Policy lookup]]
+En este boton podemos hacer una busqueda de una politica. Lo que hace fortigate es generar un paquete con los parametros dados internamente (sin generar tráfico real), para poder encontrar las politicas que coincidan. 
+Revisa
+- Reverese path forwarf RPF
+- Destination NAT
+- Route lookup
+
+Los parametros dados son los siguientes:
+![[Pasted image 20240622142524.png]]
+- Interfaz source
+- Protocolo (TCP,UDP,ICMP, etc)
+- Ip source
+- Ip destino
+Dependiendo del protocolo se deberan de dar más datos, por ejemplo para TCP requerimos del puerto destino y opcionalmente puerto fuente

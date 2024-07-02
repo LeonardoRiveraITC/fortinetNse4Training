@@ -7,6 +7,8 @@ Los objetos, además de su valor contienen un campo nombre y descripción. De es
 Los objetos se aplican a una politica de firewall una vez creados
 
 ==Un objeto no se puede eliminar sin antes eliminar todas las referencias que se hacen a ellos. Esto se facilita con la columna referencias en la vista del objeto en cuestión==
+
+==Tanto en politicas como objetos, se debe tener un nombre menor a 35 carácteres, con caracteres alfanúmericos. Y caracteres especiales solo de - y __==
 ### Direcciones y rangos de direcciones
 Las direcciones son un objeto que refleja direcciones ip. Estos pueden ser rangos o subredes. Para agregar una ip unica, debemos agregar una subred, ingresar la ip deseada y poner la mascara de red como puros 1s (/32). En este grupo de objetos también entran los ==FQDN, las IPs geográficas, las IPs dinamicas y direcciones de capa 2 (MAC) y los grupos de direcciones==
 
@@ -59,3 +61,74 @@ En fortigate podemos aplicar traffic shaping de 3 maneras:
 - Por IPs
 - Por aplicación
 Una politica de traffic shaping se aplica a una politica de firewall, por lo que hay que asegurarse que ambas coincidan
+
+### IP Pools
+Un objeto usado al momento de hacer S[[NAT]]
+Las IP pools son pools de IPs o rangos de IP, con el proposito de usar estos en lugar de la IP de la interfaz de salida.
+##### ==Al usar IP pools debemos asegurarnos de usar ips en la misma subred a la interfaz de salida. O establecer routeo propio a la configuración, ya que de otra manera se pueden perder los paquetes al no haber forma de llegar a la ruta. Ejemplo: Interfaz de salida: 172.10.11.1. IP pool: 10.0.0.1. Al momento de regresar el paquete no se va a saber por que interfaz se debe de ir al no haber ruta ==
+
+Existen 4 modos de operacion:
+-Sobrecarga
+-Uno a uno
+-Rango arreglado de puertos
+-Alojamiento de puerto a puerto
+
+#### Overload
+El modo default de operacion. Atiende un modelo de operación de muchos a uno. Donde muchas IPs son traducidas a una sola IP hasta que se agoten los puertos de esta y se pasa a la siguiente IP disponible en la pool
+
+
+#### Uno a uno
+Fortigate mapea una IP del pool a una ip interna solicitando ser nateada de manera FIFO. First come first serve. En caso de que se solicite una ip y no haya disponibles la conexión no se hara y se ignorara la petición
+
+#### Fixed port range
+Esta es una opcion útil para administradores e ISPs para dar seguimiento a que ips tienen que puertos, ya que en el default overloading es dificil saber quien tuvo acceso a que puerto más que logeando, una operación costosa
+
+Lo que hace fixed port range es:
+1. Indicar un rango de ips externas a ser mapeadas a un rango de ips internas
+2. Se llama fixed port porque se calcula el bloque de puertos a asignar en base al rango de ips internas e ips externas
+3. Estos bloques calculados de puertos, se asignan a las ips del rango interno
+
+
+##### Asignación de IP
+![[Pasted image 20240624132251.png]]
+![[Pasted image 20240624132331.png]]
+Después, debemos calcular los puertos que se reservaran a una ip, esto es importante ya que determinara los puertos a los que se identificara una ip
+
+![[Pasted image 20240624152038.png]]
+
+
+##### Asignando puertos
+
+
+```
+diagnose firewall ippool list #listar tamaño y numero de bloques
+
+diagnose firewall ippool-fixed-range list natip 70.70.70.71 #detalles de la ip externa y asignamiento de puertos por ip interna
+
+diagnose firewall ippool-fixed range list natip 70.70.70.71 5900 # Agregar source port para obtener bloque especifico
+
+```
+![[Pasted image 20240624131455.png]]
+
+
+#### Port block allocation
+
+Es muy similar al alojamiento por rangos, con la diferencia de que en lugar de calcularse los bloques de puertos se asignan manualmente
+Cuando se asigna un puerto a un host se crea una entrada de log
+
+### Central SNAT
+==Objeto activado al momento de activar el central NAT==
+El nombre de central SNAT deriva de que ahora el nateo se hará a todo el tráfico en base a reglas que pongamos (source/dest interface, source/dest address, protocolo y a veces source port). Facilitando así la administración de nateos grandes  
+Las reglas se revisan de arriba a abajo y si no matchea ninguno no se hace nateo
+
+### DNAT & VIP
+
+==Objeto activado al momento de activar el central NAT==
+De manera similar al SNAT central, ahora fortigate buscara tráfico coinicidente al VIP 
+![[Pasted image 20240625224656.png]]
+
+
+
+
+
+

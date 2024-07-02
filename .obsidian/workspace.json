@@ -4,30 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "48879dd82062f920",
+        "id": "7cb7c4acb2637a7a",
         "type": "tabs",
         "children": [
           {
-            "id": "54342f9b0406f35a",
+            "id": "d66fb36c2fd1611f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Politicas de Firewall.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1aa6852f903f33d6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "objetos.md",
-                "mode": "source",
-                "source": false
+                "file": "res/Pasted image 20240701232821.png"
               }
             }
           }
@@ -60,7 +46,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ISDB",
+                "query": "2fa",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -97,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Politicas de Firewall.md",
+                "file": "res/Pasted image 20240701232821.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Politicas de Firewall.md",
+                "file": "res/Pasted image 20240701232821.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Politicas de Firewall.md"
+                "file": "res/Pasted image 20240701232821.png"
               }
             }
           }
@@ -159,53 +145,52 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "54342f9b0406f35a",
+  "active": "853daa2b7f7c11da",
   "lastOpenFiles": [
-    "res/Pasted image 20240621173026.png",
-    "res/Pasted image 20240620203547.png",
-    "res/Pasted image 20240620200004.png",
-    "res/Pasted image 20240620082513.png",
-    "res/Pasted image 20240619101952.png",
-    "res/Pasted image 20240618145619.png",
-    "res/Pasted image 20240618133742.png",
-    "res/Pasted image 20240618133731.png",
-    "res/Pasted image 20240618133651.png",
-    "res/Pasted image 20240618133644.png",
-    "res/Pasted image 20240618132956.png",
+    "OTP.md",
+    "FortiToken 200.md",
+    "Autenticacion/Firewall authentication.md",
+    "res/Pasted image 20240702135256.png",
+    "res/Pasted image 20240702132035.png",
+    "res/Pasted image 20240701233433.png",
+    "res/Pasted image 20240701232821.png",
     "Politicas de Firewall.md",
+    "res/Pasted image 20240627075228.png",
+    "Radius.md",
+    "Labs/Lab 4 - FW Auth/Lab 1 - Remote auth.md",
+    "res/Pasted image 20240701231634.png",
+    "res/Pasted image 20240701231349.png",
+    "res/Pasted image 20240701231333.png",
+    "res/Pasted image 20240701230935.png",
+    "res/Pasted image 20240701230826.png",
+    "Labs/Lab 4 - FW Auth",
+    "Labs/Lab 3 - NAT/Lab 4 - Central DNAT y VIP.md",
+    "LDAP.md",
+    "Central NAT.md",
+    "Labs/Lab 3 - NAT/Lab 3 - Configurando central SNAT.md",
+    "Labs/Lab 3 - NAT/Lab 2 - DNAT con IP Pools.md",
     "objetos.md",
+    "NAT/NAT.md",
+    "Labs/Lab 3 - NAT/Lab 1 - Configurar DNAT usando VIP.md",
+    "VPN.md",
+    "NAT/Best Practices.md",
+    "Autenticacion",
+    "Troubleshooting - All.md",
+    "SSL/TLS handshake.md",
+    "VIP.md",
+    "Labs/Lab 3 - NAT",
+    "Labs/Lab 2 - Firewall/Lab 4 - Policy lookup.md",
+    "NAT",
+    "CLI.md",
     "ISDB.md",
     "Traffic Shaping.md",
     "Security Fabric/raiz.md",
     "Visibilidad.md",
-    "Servicios.md",
-    "Labs/Lab 2 - Firewall/Lab 3.md",
-    "Contexto de seguridad actual.md",
-    "Configuración.md",
-    "Intrution Prevention System IPS/IPS - Intrution Prevention System.md",
-    "LDAP (pendiente).md",
-    "Redes.md",
-    "Labs/Lab 2 - Firewall/Lab 2- Reordenando politicas de firewall y acciones.md",
-    "Intrution Prevention System IPS/Protocol Decoder (Flow-based).md",
-    "UTM.md",
-    "Untitled.md",
-    "SSL/SSL inspection.md",
-    "Antivirus/Antivirus.md",
-    "Administración.md",
-    "DNS.md",
-    "DHCP.md",
-    "Antivirus/Troubleshooting.md",
-    "Vdom.md",
-    "Factory defaults.md",
     "Administración",
     "Labs/Lab 2 - Firewall",
     "Labs/Lab 1",
     "Labs",
     "Security Fabric",
-    "Excalidraw",
-    "Intrution Prevention System IPS/res",
-    "Intrution Prevention System IPS",
-    "Troubleshooting",
-    "Logs"
+    "Excalidraw"
   ]
 }

@@ -1,1 +1,0 @@
-**Lightweight Directory Access Protocol**

@@ -1,0 +1,1 @@
+One time password. Son contraseñas de poco tiempo de vida y que solo sirven una vez, lo que las hace mejores que contraseñas estáticas en ese sentido de intercepción y ataque

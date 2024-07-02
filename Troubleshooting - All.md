@@ -2,6 +2,24 @@
 ### *Es normal que un dispositivo con muchas politicas, perfiles o VDOMS tenga alto uso, pero se debe aislar la problemática en caso de presentar un uso alto todo el tiempo
 
 
+# [[Politicas de Firewall]]
+
+En caso de que no sirva una politica siempre hay que revisar sus objetos que le conforman, además del orden de las politicas en la tabla
+
+De ser posible, mezclar politicas para poder ahorrar tiempos de ejecución. Tener cuidado con cosas como perfiles de seguridad y logging que son las que pueden discrepar a la hora de crear una politica
+
+
+# [[NAT]]
+Mostrar todas las ip pools 
+```
+diagnose firewall ippool-all list
+```
+
+Muestra estadisticas del ip pool
+```
+diagnose firewall ippool-all stats <Optional IP poolname>
+```
+
 # [[IPS - Intrution Prevention System]]
 Similar a otros sistemas de firmas[[Troubleshooting - All]]
 
@@ -52,3 +70,4 @@ config ips global
 	set fail-open <enable|disable>
 end
 ```
+
