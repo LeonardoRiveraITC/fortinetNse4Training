@@ -1,8 +1,8 @@
-Para [[Proxy-mode]] la página de bloqueo se muestra inmediatamente
+Para [[Proxy based inspection]] la página de bloqueo se muestra inmediatamente
 
 Esto tiene sentido ya que proxy mode es un proxy por el cual podemos interceptar y disruptir trafico
 
-Por su parte en [[Flow mode]], el bloqueo se efectua al primer intento si el virus se detecta al inicio del stream. O en el segundo intento si se detecta en paquetes posteriores
+Por su parte en [[Flow based inspection]], el bloqueo se efectua al primer intento si el virus se detecta al inicio del stream. O en el segundo intento si se detecta en paquetes posteriores
 
 La página de bloqueo contiene lo siguiente
 

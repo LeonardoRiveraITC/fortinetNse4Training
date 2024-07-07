@@ -1,4 +1,5 @@
 Parte del [[UTM]]
+==Usa [[Flow based inspection]]==
 ## Uso 
 Para aplicar un perfil IPS debemos configurarlo primero en 
 ==Security profiles > Intrusion prevention system ==

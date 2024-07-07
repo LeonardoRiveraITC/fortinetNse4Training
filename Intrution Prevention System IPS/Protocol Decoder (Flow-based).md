@@ -1,4 +1,4 @@
-Esta es una carácteristica de [[Flow mode]]
+Esta es una carácteristica de [[Flow based inspection]]
 
 Un protocolo es una ==especificación== de reglas las cuales nos permiten la comunicación, por lo que un protocol decoder es un decodificador de protocolo. Nos permite decodificar y detectar anomalias en un mensaje de un protocolo.
 

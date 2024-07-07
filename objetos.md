@@ -25,15 +25,15 @@ Se puede programar por recurrentes o una vez; horas en dias especificos
 
 ### Perfiles de seguridad
 Los perfiles de seguridad son parte de los [[Servicios]] que ofrece fortigate para la protección extendida de la red. Una vez que la politica acepto el paquete, puede pasar por varios perfiles de seguridad, los cuales analizaran paquete por paquete en dos modos
-- [[Proxy-mode]] ó
-- [[Flow mode]]
+- [[Proxy based inspection]] ó
+- [[Flow based inspection]]
 Cada uno con sus caracteristicas
 Entre los perfiles que podemos aplicar tenemos
 - [[Antivirus]]
-- [[Web filter (pendiente)]]
-- [[Video filter (pendiente)]]
-- [[DNS filter (pendiente)]]
-- [[Application control (pendiente)]]
+- [[Web filter]]
+- [[Video filtering]]
+- [[Web filter]]
+- [[Application control]]
 - [[IPS - Intrution Prevention System]]
 - [[File filter (pendiente)]]
 - [[VoIP (pendiente)]]
@@ -128,7 +128,36 @@ De manera similar al SNAT central, ahora fortigate buscara tráfico coinicidente
 ![[Pasted image 20240625224656.png]]
 
 
+### Protocol  options
+==Objects & policy > Protocol options==
+Usado en especial para [[Antivirus]], [[Web filter]] y otros perfiles de seguridad
+Provee de una forma granular de especificar tipos de tráfico por ciertos puertos, para así manejar apropiadamente el tráfico en la politica 
+
+Protocol port mapping 
+	- HTTP
+	- SMTP
+	- POP3
+	- IMAP
+	- FTP
+	- NFTP
+	- MAPI
+	- DNS
+	- CIFS
+
+##### opciones
+- Confort clients
+	Esta opcion consiste en enviar un poco de datos al cliente en lo que se analiza un archivo de av
+- Block oversized files
 
 
-
+##### comandos
+Configurar protocol-options
+```
+config firewall profile-protocol-options
+	edit <profile-name>
+	config <protocol-name>
+	set options oversize
+	set oversize-limit <integer>
+	set oversize-log <integer>
+```
 

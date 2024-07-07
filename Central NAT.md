@@ -12,6 +12,6 @@ config system settings
 end
 ```
 
-Mandatorio para activar el modo NGFW [[Policy based]]
+Mandatorio para activar el modo [[NGFW Mode]] policy based 
 
 Visto en [[Lab 3 - Configurando central SNAT]]

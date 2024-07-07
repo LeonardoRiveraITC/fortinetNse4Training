@@ -7,17 +7,34 @@ La autenticación de firewall es necesaria debido a que la autenticación tradic
 
 ==De forma general se habilita el uso de dns de forma libre a los usuarios, ya que es un servicio base y es probable que sea usado para comunicar al servidor de autenticación en primer lugar==
 
+==Se pueden ver y manipular sesiones activas en Dashboard > Users & Devices==
+
 ![[Pasted image 20240702132035.png]]
 De forma similar, es común incluir los protocolos HTTP,HTTPS y FTP, ya que son usados para las formas de autenticación activas
 ### Autenticación local
 La más simple de todas, se alamacena en el fortigate de manera lcoal y puedes habilitar 2fa por medio de sms, token, email
 
-### Autenticación de servidor externo (RADIUS,LDAP,AD,POP3,TACACS)
+### Autenticación de servidor externo (RADIUS,LDAP,POP3,TACACS)
 Cuando se usa esta opcion tenemos dos opciones:
 - Agregar un usuario local con autenticación externa
 - Agregar el servidor a un grupo de usuarios, donde todos los usuarios serán parte de ese servidor
 - POP3 solo se puede configurar por CLI
 - POP3 es el unico que requiere del correo completo, los demás dependera de la configuración depender de 
+
+#### Diferencias de autenticación
+Existe una diferencia fundamental al momento de usar fortigate para autenticar con grupos, ya que esta la opcion de 
+
+- Autenticación directa
+	- Autenticación directa sobre el firewall
+		- RSSO
+		- FSSO
+		- Local users
+
+- Creación de un grupo de firewall que reflejara al grupo remoto
+	- En esta opcion se crea un grupo de firewall local que después se comunicara con el servidor remoto para comprobar la auntenticación del grupo importado
+		- LDAP
+		- Radius
+
 
 ##### Creando grupos de usuarios como servidores externos
 ###### Usando usuarios
@@ -132,4 +149,10 @@ Se habilita un portal en una interfaz por donde todos los usuarios pasarán
 ![[Pasted image 20240702135256.png]]
 
 
+### Comandos
 
+Probar la autenticacion de un usuario
+
+```
+diagnose test authserver ldap <servidor> <usuario> <pass>
+```

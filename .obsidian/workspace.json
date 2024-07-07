@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "7cb7c4acb2637a7a",
+        "id": "e75187e7c57d6280",
         "type": "tabs",
         "children": [
           {
-            "id": "d66fb36c2fd1611f",
+            "id": "f1bf053aedcc8ea8",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "res/Pasted image 20240701232821.png"
+                "file": "Antivirus/Antivirus.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -46,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "2fa",
+                "query": "outbreak",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "res/Pasted image 20240701232821.png",
+                "file": "Antivirus/Antivirus.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "res/Pasted image 20240701232821.png",
+                "file": "Antivirus/Antivirus.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "res/Pasted image 20240701232821.png"
+                "file": "Antivirus/Antivirus.md"
               }
             }
           }
@@ -145,52 +147,53 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "853daa2b7f7c11da",
+  "active": "f1bf053aedcc8ea8",
   "lastOpenFiles": [
-    "OTP.md",
-    "FortiToken 200.md",
-    "Autenticacion/Firewall authentication.md",
-    "res/Pasted image 20240702135256.png",
-    "res/Pasted image 20240702132035.png",
-    "res/Pasted image 20240701233433.png",
-    "res/Pasted image 20240701232821.png",
-    "Politicas de Firewall.md",
-    "res/Pasted image 20240627075228.png",
-    "Radius.md",
-    "Labs/Lab 4 - FW Auth/Lab 1 - Remote auth.md",
-    "res/Pasted image 20240701231634.png",
-    "res/Pasted image 20240701231349.png",
-    "res/Pasted image 20240701231333.png",
-    "res/Pasted image 20240701230935.png",
-    "res/Pasted image 20240701230826.png",
-    "Labs/Lab 4 - FW Auth",
-    "Labs/Lab 3 - NAT/Lab 4 - Central DNAT y VIP.md",
-    "LDAP.md",
-    "Central NAT.md",
-    "Labs/Lab 3 - NAT/Lab 3 - Configurando central SNAT.md",
-    "Labs/Lab 3 - NAT/Lab 2 - DNAT con IP Pools.md",
     "objetos.md",
-    "NAT/NAT.md",
-    "Labs/Lab 3 - NAT/Lab 1 - Configurar DNAT usando VIP.md",
-    "VPN.md",
-    "NAT/Best Practices.md",
-    "Autenticacion",
-    "Troubleshooting - All.md",
-    "SSL/TLS handshake.md",
-    "VIP.md",
-    "Labs/Lab 3 - NAT",
-    "Labs/Lab 2 - Firewall/Lab 4 - Policy lookup.md",
-    "NAT",
-    "CLI.md",
-    "ISDB.md",
-    "Traffic Shaping.md",
-    "Security Fabric/raiz.md",
-    "Visibilidad.md",
-    "Administración",
-    "Labs/Lab 2 - Firewall",
-    "Labs/Lab 1",
-    "Labs",
-    "Security Fabric",
-    "Excalidraw"
+    "Labs/Lab 7 - Web filter/Lab 2 - setting up web filter firewall auth.md",
+    "Labs/Lab 7 - Web filter/Lab 1 - Configurando web filtering.md",
+    "AV.md",
+    "Antivirus/Antivirus.md",
+    "Pasted image 20240707011806.png",
+    "Antivirus/Fortisandbox.md",
+    "Conceptos fortigate/Proxy based inspection.md",
+    "Conceptos fortigate/Flow based inspection.md",
+    "Conceptos fortigate/NGFW Mode.md",
+    "Pasted image 20240707010224.png",
+    "Antivirus/Block page.md",
+    "Application control/Application control.md",
+    "res/Pasted image 20240706142832.png",
+    "res/Pasted image 20240707005435.png",
+    "UTM.md",
+    "Application control/Traffic shapping.md",
+    "Labs/Lab 4 - FW Auth/Lab 1 - Remote auth.md",
+    "Central NAT.md",
+    "Intrution Prevention System IPS/IPS - Intrution Prevention System.md",
+    "res/Pasted image 20240706202449.png",
+    "res/Pasted image 20240706202442.png",
+    "res/Pasted image 20240706201156.png",
+    "Licensamiento.md",
+    "res/Pasted image 20240706200646.png",
+    "Application control",
+    "res/Pasted image 20240706195212.png",
+    "res/Pasted image 20240706195051.png",
+    "Autenticacion/Firewall authentication.md",
+    "Web filtering/Categorias.md",
+    "Web filtering/Web filter.md",
+    "Antivirus/Flow mode.md",
+    "Antivirus/Best practices - AV.md",
+    "Antivirus/Proxy-mode.md",
+    "CertOps/Inspeccion de certificados.md",
+    "SSL/SSL inspection.md",
+    "CertOps/Certificados.md",
+    "Labs/Lab 7 - Web filter",
+    "Labs/Lab 6 - Cert ops",
+    "Labs/SSL Inspection",
+    "Labs/Lab 5 - Logging",
+    "Web filtering",
+    "Conceptos fortigate",
+    "Conceptos base",
+    "CertOps",
+    "Labs/Lab 4 - FW Auth"
   ]
 }
