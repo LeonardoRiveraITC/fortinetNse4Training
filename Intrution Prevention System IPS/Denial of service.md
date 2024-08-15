@@ -1,6 +1,7 @@
 ==policy & objects > IPv4 DOS Policy==
+Usado en [[Lab 3 - Mitigar ddos]]
 
-
+Las politicas se aplican automaticamente al DOM
 Un ataque de denegación de servicio consiste en sobrecargar el objetivo de x o y manera de forma que no pueda responder a peticiones de clientes legitimos
 
 - Un ejemplo de esto son los ataques DDOS que buscan gastar los recursos de ancho de banda de el objetivo

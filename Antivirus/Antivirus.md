@@ -49,15 +49,20 @@ El orden de escaneo es tal como se presenta: Firmas > Grayware > AI
 - Base de datos de fortisandbox
 
 ### Comportamiento
-[[Proxy based inspection]]
+##### [[Proxy based inspection]]
+Usado en [[Lab 1 - Antivirus en proxy based mode]]
+==CDR - content disarming, MAPI, SSH, MS office docs==
 
 Dos modos 
 - default - stream based scanning
-	- Mejora el escaneo de contenidos nesteados sin bufferear al analizarlos en la marcha. Extrae y analiza. Optimizado para uso en memoria
+	- Mejora el escaneo de contenidos nesteados sin bufferear al analizarlos en la marcha. Extrae y analiza. Optimizado para uso en memoria. ==Default de nesteo de 12 capaz==. Con un maximo de 100
+		- Soportado para archivos			ZIP,TAR,GZIP,RAR,LSH,CAB,ARJ,MSC,BZIP,BZIP2,7Z,EGG,XZ,CPIO,AR,ACE,ISO,DAA,CRX,CHM
+		- El tamaño default del buffer es de 10% de ram
 	- Soporta FTP,SFTP,SCP
 - legacy
 		Bufferea todo el archivo para analizar
 - Ambos usan la bd de firmas
+
 
 1. En este modo se espera a recibir todo el archivo antes de analizarlo
 2. Se guarda en un buffer mientras se esperan todos los contenidos
@@ -70,8 +75,8 @@ Dos modos
 5. ![[Pasted image 20240707010224.png]]
 
 
-[[Flow based inspection]]
-==CDR - content disarming, MAPI, SSH, MS office docs==
+##### [[Flow based inspection]]
+Usado en [[Lab 2 - Flow based]]
 - Modo hibrido con [[Proxy based inspection]]
 	1. A medida que recibe los paquetes se inspeccionan
 	2. Se guarda una copia y se forwardea, esto continua hasta el ultimo paquete
@@ -82,7 +87,7 @@ Dos modos
 
 
 ### Opciones
-- APT protection options
+- ATP protection options
 	- Tratar windows ejecutables en attachments de mail como maliciosos
 		- ==Esta habilitado por default ==
 	- Enviar archivos a analizar a fortisandbox
@@ -91,6 +96,19 @@ Dos modos
 	- [[Security fabric]] Connector que soporta hashes md5,sha1,sha256
 
 ### Comandos
+Actualizar bd de firmas
+```
+execute update-av
+```
+
+Debug db
+```
+diagnose debug application update -1
+diagnose debug enable
+```
+
+
+
 Estatus de actualizaciones
 ```
 diagnose autoupdate status
@@ -103,5 +121,23 @@ Establecer BD extrema
 ```
 config antivirus settings
 	set use-extreme-db
+end
+```
+
+##### Habilitar aceleración de hardware para analisis de av
+###### Aceleracion de analisis
+==No disponible para [[Proxy based inspection]]==
+Solo para modelos con NTurbo (NP6,NP7,SoC4)
+```
+config ips global
+	set np-accel-mode [none|basic]
+end
+```
+
+##### Offloading
+==Disponible para CP9 o CP9==
+```
+config ips global
+	set cp-accel-mode [none | basic | advanced]
 end
 ```

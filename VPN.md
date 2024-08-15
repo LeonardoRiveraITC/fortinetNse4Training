@@ -9,11 +9,31 @@ VPN en rutas, sirve para situaciones en las que hay que pasar muchas politicas o
 ## IPSEC
  Las VPN - virtual private network son redes virtuales con el proposito de crear una conexión segura, ==Autenticable y cifrada== a través de redes públicas y no confiables, como el internet
 
+IPSec son multiples protocolos trabajando en conjunto
+- Autentication Header AH - Checksum que verifica la intgridad de los datos
+- ESP - Encapsulated Security Payload - Los datos cifrados, esencialmente el canal de datos
+	- Numero de protocolo IP 17
+- Internet Key Exchange - Negociación de llaves, el canal de autenticación
+	- IKE v1 (RFC 2409)
+		- UDP 500
+	- IKE v2 (RFC 4306)
+		- UDP 4500 NAT (rekey, quick config)
+		- 500 SIn NAT
+
+
+##### Encapsulación
+![[Pasted image 20240717104117.png]]
+- Transporte protege la capa 4 para arriba, osea que no se altera la capa 3
+- Tunnel protege la capa 3, al envolver el paquete y ser desenvolvido una vez que alcanza la lan destino
+
+
+
+
 Bases de IPSec.
 Muy parecido a [[TLS - Transport layer security]], IPSec usa llaves [[Cifrado asimetrico]] para poder llevar a cambio un intercambio de llaves simetricas para la sesión
 
 
-### Fase 1
+### Fase 1 - IKE Security Association
 En el caso de VPN, el equivalente a [[TLS handshake]], seria el protocolo [[IKE - Internet Key Exchange (pendiente)]]
 
 
@@ -25,7 +45,7 @@ En el caso de VPN, el equivalente a [[TLS handshake]], seria el protocolo [[IKE 
 
 ![[Pasted image 20240623201624.png]]
 
-### Fase 2
+### Fase 2 - IPSec Security Association
 1. Se usan las llaves acordadas en fase 1
 2. Acordar métodos de cifrado y llaves usadas para el tráfico de bulto (tráfico de red)
 3. Se crea un tunnel IPPSEC Security Association (tunnel fase 2)
@@ -33,4 +53,6 @@ En el caso de VPN, el equivalente a [[TLS handshake]], seria el protocolo [[IKE 
 La razón de dividir las fases en dos es para poder crear y destruir tuneles de fase 2 facilmente. Cuando ya no exista tráfico interesante, tirar el tunel hasta que de nuevo haya tráfico, esto no toma tiempo ya que ya se llego a un acuerdo desde fase 1.
 
 ![[Pasted image 20240623201821.png]]
+
+
 

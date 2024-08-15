@@ -1,0 +1,1 @@
+En este modo fortigate actua como un router NAT de capa 3

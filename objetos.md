@@ -89,7 +89,7 @@ Lo que hace fixed port range es:
 3. Estos bloques calculados de puertos, se asignan a las ips del rango interno
 
 
-##### Asignación de IP
+##### Asignación de puerto
 ![[Pasted image 20240624132251.png]]
 ![[Pasted image 20240624132331.png]]
 Después, debemos calcular los puertos que se reservaran a una ip, esto es importante ya que determinara los puertos a los que se identificara una ip

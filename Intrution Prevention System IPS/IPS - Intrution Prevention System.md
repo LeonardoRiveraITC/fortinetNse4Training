@@ -1,5 +1,17 @@
 Parte del [[UTM]]
 ==Usa [[Flow based inspection]]==
+==A los perfiles se les llama sensores==
+
+Es usado para detectar [[Anomalia]] y [[Exploit]]
+
+==El motor de IPS tambien es responsable por la mayoria de operaciones de seguridad==
+- [[Application control]]
+- [[Antivirus]]
+- [[Web filter]]
+- [[Email filter]]
+
+El motor de IPS es el motor del cuál fortigate detecta exploits en base de firmas y [[Protocol Decoder (Flow-based)]] y es responsable de la mayoria de analisis llevados a cabo en fortigate
+
 ## Uso 
 Para aplicar un perfil IPS debemos configurarlo primero en 
 ==Security profiles > Intrusion prevention system ==
@@ -8,30 +20,42 @@ Después debemos aplicar el perfil en la politica de firewall deseada tal que:
 
 ![[Pasted image 20240613121623.png]]
 
-*Podemos habilitar el logeo de all sessions en caso de notar comportamiento no deseado para así troubleshoot positivos falsos*
 
 
-==system>fortiguard==
+### Modos
+##### Fltro
+Filtra por categorias de amenaza y protocolo
 
-==*Como todo en fortiguard, se debe crear un objeto primero, para luego aplicarlo a una politica de firewall*==
+- critical
+- high 
+- medium
+- low
+- informational
+Protocolo
+- SSH
+- FTP
+- HTTP
+- SMB
+Applicaciones
+- Skype
+- Mysql
+- MS
+SO
+- Linux
+- Windows
 
-
-El motor de IPS es el motor del cuál fortigate detecta exploits en base de firmas y [[Protocol Decoder (Flow-based)]] y es responsable de la mayoria de analisis llevados a cabo en fortigate
-Tales como
-- Application control
-- Virus protection (flow)
-- Web filtering (flow)
-- Email filtering (flow)
-- ...
-
-Para encontrar exploits el IPS usa [[Firmas (Pendiente)]]
-
+##### Firmas
+Filtra por las firmas especificadas, clasificación y threshold de nivel de amenaza
+Usado en [[Lab 2 - Rate based]]
 
 ### Updates
+
+La actualización de la base de datos de firmas incluye
+
 - Se actualiza la base de datos de firmas para reconocer exploits
 - Por su parte un protocolo no se actualiza a menos que cambie la especificación (MUY rara vez)
 - El motor se actualiza con más frecuencia pero no es tan seguido
-- Por su parte, la base de datos de ip botnets es parte de [[ISDB]], y la base de datos de dominios botnets es parte de AV
+- ==Por su parte, la base de datos de ip botnets es parte de [[ISDB]], y la base de datos de dominios botnets es parte de AV==
 - La frecuencia de las actualizaciones a partir de 7.0 se calcula en base a las licencias validas y el modelo con un intervalo de una hora
 - Como todo producto, si caduca la licencia se podrá usar pero dejará de ser actualizado
 
@@ -66,17 +90,11 @@ Los sensores son la manera en la que se elige que firmas detectar, estas firmas 
 
 
 ## Excepciones 
-
-
 Bajo de cada firma podemos poner excpeciones de ip fuente o destino, esto solo se puede hacer una por una
 
 ## Acciones
 
-De nuevo, paralelo al [[Politicas de Firewall]], tenemos distintas acciones a tomar cuando se encuentra con una firma
-
-Estas acciones son:
-
-- Permitir
+- Permitir 
 - Monitorear
 - Bloquear
 - Reset (envia un tcp rst)
@@ -104,7 +122,7 @@ Como se puede ver en este ejemplo, podemos agregar firmas basandose en su nombre
 
 ## Proteccion de [[Botnets (pendiente)]]
 
-- Es parte de la licencia IPS
+- Es parte de la licencia ISDB 
 - Se debe habilitar en el perfil IPS que exista sobre la politica deseada
 
 ## [[Logs/Logs|Logs]]

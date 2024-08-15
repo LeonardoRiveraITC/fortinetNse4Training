@@ -1,0 +1,1 @@
+En este modo fortigate actua como un dispositivo de capa 2

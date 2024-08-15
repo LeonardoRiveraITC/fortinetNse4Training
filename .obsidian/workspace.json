@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "e75187e7c57d6280",
+        "id": "36bb8d440578e7fc",
         "type": "tabs",
         "children": [
           {
-            "id": "f1bf053aedcc8ea8",
+            "id": "090b2fa7040a9dfe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Antivirus/Antivirus.md",
+                "file": "Routing/Routeo.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "outbreak",
+                "query": "netapi",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Antivirus/Antivirus.md",
+                "file": "Routing/Routeo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Antivirus/Antivirus.md",
+                "file": "Routing/Routeo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Antivirus/Antivirus.md"
+                "file": "Routing/Routeo.md"
               }
             }
           }
@@ -147,53 +147,53 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f1bf053aedcc8ea8",
+  "active": "090b2fa7040a9dfe",
   "lastOpenFiles": [
-    "objetos.md",
-    "Labs/Lab 7 - Web filter/Lab 2 - setting up web filter firewall auth.md",
-    "Labs/Lab 7 - Web filter/Lab 1 - Configurando web filtering.md",
-    "AV.md",
-    "Antivirus/Antivirus.md",
-    "Pasted image 20240707011806.png",
-    "Antivirus/Fortisandbox.md",
-    "Conceptos fortigate/Proxy based inspection.md",
-    "Conceptos fortigate/Flow based inspection.md",
-    "Conceptos fortigate/NGFW Mode.md",
-    "Pasted image 20240707010224.png",
-    "Antivirus/Block page.md",
+    "Routing/Routeo en fortigate.md",
+    "Routing/RIP - Routing interface protocol.md",
+    "SSL/TLS handshake.md",
+    "res/Pasted image 20240610235301.png",
+    "res/Pasted image 20240610235301 1.png",
+    "SSL/Cifrado asimetrico.md",
+    "SSL/TLS - Transport layer security.md",
+    "High Availabilty.md",
+    "VPN.md",
+    "VPN/IPSec VPN.md",
+    "Security Fabric/Security fabric.md",
+    "FSSO/FSSO.md",
+    "Trouble shooting.md",
+    "Labs/Inf Guide/Lab 6/IPSec VPN.md",
+    "Labs/Inf Guide/Lab 7 - HA",
+    "Labs/Inf Guide/Lab 5 - SSL VPN/Web SSL VPN.md",
+    "Labs/Inf Guide/Lab 5 - SSL VPN/Modo Tunnel.md",
+    "Labs/Inf Guide/Lab 6",
+    "VPN/SSL VPN.md",
+    "Pasted image 20240728181321.png",
+    "Pasted image 20240728181034.png",
+    "Pasted image 20240728180557.png",
+    "Pasted image 20240728180302.png",
+    "Pasted image 20240728180151.png",
+    "Pasted image 20240728180139.png",
+    "Pasted image 20240728175542.png",
+    "Pasted image 20240728172445.png",
+    "Labs/Inf Guide/Lab 5 - SSL VPN",
     "Application control/Application control.md",
-    "res/Pasted image 20240706142832.png",
-    "res/Pasted image 20240707005435.png",
-    "UTM.md",
-    "Application control/Traffic shapping.md",
-    "Labs/Lab 4 - FW Auth/Lab 1 - Remote auth.md",
-    "Central NAT.md",
-    "Intrution Prevention System IPS/IPS - Intrution Prevention System.md",
-    "res/Pasted image 20240706202449.png",
-    "res/Pasted image 20240706202442.png",
-    "res/Pasted image 20240706201156.png",
-    "Licensamiento.md",
-    "res/Pasted image 20240706200646.png",
-    "Application control",
-    "res/Pasted image 20240706195212.png",
-    "res/Pasted image 20240706195051.png",
     "Autenticacion/Firewall authentication.md",
-    "Web filtering/Categorias.md",
-    "Web filtering/Web filter.md",
-    "Antivirus/Flow mode.md",
-    "Antivirus/Best practices - AV.md",
-    "Antivirus/Proxy-mode.md",
-    "CertOps/Inspeccion de certificados.md",
-    "SSL/SSL inspection.md",
-    "CertOps/Certificados.md",
-    "Labs/Lab 7 - Web filter",
-    "Labs/Lab 6 - Cert ops",
-    "Labs/SSL Inspection",
-    "Labs/Lab 5 - Logging",
-    "Web filtering",
-    "Conceptos fortigate",
-    "Conceptos base",
-    "CertOps",
-    "Labs/Lab 4 - FW Auth"
+    "Administración.md",
+    "objetos.md",
+    "NAT/NAT.md",
+    "Labs/Sec Guide/Lab 3 - NAT/Lab 2 - DNAT con IP Pools.md",
+    "NAT/Best Practices.md",
+    "Antivirus/Antivirus.md",
+    "VIP.md",
+    "Logs/Logs.md",
+    "Politicas de Firewall.md",
+    "Labs/Inf Guide/Lab 3 - FSSO",
+    "Labs/Inf Guide/Lab 2 - VDOM",
+    "Labs/Inf Guide/Lab 1 - Routing",
+    "Labs/Inf Guide",
+    "Labs/Sec Guide",
+    "Untitled",
+    "VPN"
   ]
 }
