@@ -1,0 +1,2 @@
+Cloud access security broker, a product for protection over saas application, such as google everything, ms everything and the likes. It provides DLP, shadow it discovery, policies, threat protection and detection, 
+![[Pasted image 20250918151414.png]]

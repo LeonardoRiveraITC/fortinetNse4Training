@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "36bb8d440578e7fc",
+        "id": "9241455bc1f8c217",
         "type": "tabs",
         "children": [
           {
-            "id": "090b2fa7040a9dfe",
+            "id": "28c918c2394162f5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Routing/Routeo.md",
+                "file": "FortiManager.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "FortiManager"
             }
           }
         ]
@@ -38,8 +40,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -54,7 +59,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,7 +69,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -85,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Routing/Routeo.md",
+                "file": "Fortianalyzer/Datasets.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +102,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Datasets"
             }
           },
           {
@@ -102,10 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Routing/Routeo.md",
+                "file": "Fortianalyzer/Datasets.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Datasets"
             }
           },
           {
@@ -116,7 +129,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -125,8 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Routing/Routeo.md"
-              }
+                "file": "Fortianalyzer/Datasets.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Datasets"
             }
           }
         ]
@@ -138,6 +155,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -147,13 +165,37 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "090b2fa7040a9dfe",
+  "active": "28c918c2394162f5",
   "lastOpenFiles": [
+    "FortiManager.md",
+    "Enterprise firewall/Introduction.md",
+    "Pasted image 20250918153007.png",
+    "Pasted image 20250918152845.png",
+    "Pasted image 20250918152634.png",
+    "Pasted image 20250918152529.png",
+    "forticasb.md",
+    "Pasted image 20250918151414.png",
+    "FortiCWP.md",
+    "Fortiweb",
+    "Antivirus/Untitled",
+    "Pasted image 20250918141516.png",
+    "Pasted image 20250909125050.png",
+    "Pasted image 20250909123305.png",
+    "CertOps/Certificados.md",
+    "Enterprise firewall",
+    "IKE - Internet Key Exchange (pendiente).md",
+    "Fortianalyzer/SQL.md",
+    "Fortianalyzer/Fortianalyzer.md",
+    "Pasted image 20241022012156.png",
+    "Pasted image 20241022012113.png",
+    "Fortianalyzer/Datasets.md",
+    "Fortianalyzer",
+    "VLANS.md",
+    "Routing/Routeo.md",
+    "Excalidraw/Drawing 2024-08-22 14.01.55.excalidraw.md",
     "Routing/Routeo en fortigate.md",
     "Routing/RIP - Routing interface protocol.md",
     "SSL/TLS handshake.md",
-    "res/Pasted image 20240610235301.png",
-    "res/Pasted image 20240610235301 1.png",
     "SSL/Cifrado asimetrico.md",
     "SSL/TLS - Transport layer security.md",
     "High Availabilty.md",
@@ -167,33 +209,9 @@
     "Labs/Inf Guide/Lab 5 - SSL VPN/Web SSL VPN.md",
     "Labs/Inf Guide/Lab 5 - SSL VPN/Modo Tunnel.md",
     "Labs/Inf Guide/Lab 6",
-    "VPN/SSL VPN.md",
-    "Pasted image 20240728181321.png",
-    "Pasted image 20240728181034.png",
-    "Pasted image 20240728180557.png",
-    "Pasted image 20240728180302.png",
-    "Pasted image 20240728180151.png",
-    "Pasted image 20240728180139.png",
-    "Pasted image 20240728175542.png",
-    "Pasted image 20240728172445.png",
     "Labs/Inf Guide/Lab 5 - SSL VPN",
-    "Application control/Application control.md",
-    "Autenticacion/Firewall authentication.md",
-    "Administración.md",
-    "objetos.md",
-    "NAT/NAT.md",
-    "Labs/Sec Guide/Lab 3 - NAT/Lab 2 - DNAT con IP Pools.md",
-    "NAT/Best Practices.md",
-    "Antivirus/Antivirus.md",
-    "VIP.md",
-    "Logs/Logs.md",
-    "Politicas de Firewall.md",
     "Labs/Inf Guide/Lab 3 - FSSO",
     "Labs/Inf Guide/Lab 2 - VDOM",
-    "Labs/Inf Guide/Lab 1 - Routing",
-    "Labs/Inf Guide",
-    "Labs/Sec Guide",
-    "Untitled",
-    "VPN"
+    "Labs/Inf Guide/Lab 1 - Routing"
   ]
 }
